@@ -68,13 +68,13 @@ func printTable(transactions []database.Transaction, balance int64) {
 }
 
 func filterTransaction(transactions []database.Transaction, typeTransaction string) []database.Transaction {
-	var creditTransactions []database.Transaction
+	var transactionsFilter []database.Transaction
 
 	From(transactions).Where(func(i interface{}) bool {
 		return i.(database.Transaction).Type == typeTransaction
 	}).Select(func(i interface{}) interface{} {
 		return i.(database.Transaction)
-	}).ToSlice(&creditTransactions)
+	}).ToSlice(&transactionsFilter)
 
-	return creditTransactions
+	return transactionsFilter
 }
