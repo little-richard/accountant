@@ -1,0 +1,1 @@
+[{"username":"rimendes","balance":100,"transactions":[{"amount":50,"type":"credit","narration":"adicionandocredit"},{"amount":30,"type":"debit","narration":"Sacando valor"},{"amount":90,"type":"credit","narration":"Novo Deposito"},{"amount":10,"type":"debit","narration":"Sacando valor"}]}]
